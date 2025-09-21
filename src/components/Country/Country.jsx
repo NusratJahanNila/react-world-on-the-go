@@ -18,7 +18,7 @@ const Country = ({country,handleVisitedCountries}) => {
         // setVisited(visited? false:true);
 
         // rule-3
-        setVisited(!visited? true:false);
+        setVisited(!visited);
 
         handleVisitedCountries(country);
 
@@ -35,7 +35,7 @@ const Country = ({country,handleVisitedCountries}) => {
                 <p>Population: {country.population.population}</p>
                 <p>Area: {country.area.area} : {country.area.area> 300000? 'Big Country': "Small Country"}</p>
                 <p>Continents: {country.continents.continents[0]}</p>
-                {/*  */}
+                {/* button */}
                 <button style={{backgroundColor:'khaki'}} onClick={handleVisited}>
                     {
                         visited? "Visited" : "Not Visited"
