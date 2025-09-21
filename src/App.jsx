@@ -12,7 +12,7 @@ function App() {
     <>
       
       <h1 style={{textAlign:'center'}}>React World On The Go</h1>
-      <Suspense fallback={<p>Countries are loading</p>}>
+      <Suspense fallback={<h1 style={{color: 'green'}}>Countries are loading....</h1>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
      
